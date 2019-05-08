@@ -8,4 +8,4 @@ XAMPP is a completely free, easy to install Apache distribution containing Maria
 In order to run this code, first, it needs to import .csv files to the database. In CreateDB.sql file, the current roots of .csv files need to be changed. 
 In addition to that, food.php and getfooddata.php should copy to the htdocs folder (C:\xampp\htdocs) of Apache file. 
 
-Technologies like Javascript, JQuary, Bootstrap, and Html have been used to develop a friendly client side. For the server side, PHP and SQL, in particular, PostgreSQL used. To connect back-end and front-end AJAX technology have been deployed.
+Technologies like Javascript, Bootstrap, and Html have been used to develop a friendly client side. For the server side, PHP and SQL, in particular, PostgreSQL used. To connect back-end and front-end AJAX technology have been deployed.
