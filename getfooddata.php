@@ -4,9 +4,6 @@
 	$age = $_REQUEST["age"];
 	$dir = $_REQUEST["dir"];
 	
-	//echo $gender . " " . $age . " " . $dir; 
-	
-	
 	$host='localhost';
 	$db = 'Food';
 	$username = 'postgres'; 
@@ -40,9 +37,6 @@
 			$i++;
 			$output[$i]= str_replace(')',"",$resarray[4]);
 			$i++;
-		//echo str_replace('"', "",$resarray[3]) . " of " . str_replace(')',"",$resarray[4]);
-		//echo $resarray[4]; 
-		//echo $result[0]; 
 		}
 	}
 	
