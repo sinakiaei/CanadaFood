@@ -1,7 +1,8 @@
 -- CREATE TABLES
 
--- HINT: Before create directional table, you need to copy fgcat_id column from "foodgroups-en_ONPP.csv" file
+-- HINT1: Before create directional table, you need to copy fgcat_id column from "foodgroups-en_ONPP.csv" file
 -- to "fg_directional_satements-en_ONPP.csv" file.
+-- HINT2: Database "Food" needs to create in pgAdmin and then create each of these tables on it.
 
 -- First line: Delete possible existing table in database.
 -- Second line: Create table based on .csv file columns.
