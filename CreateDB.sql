@@ -1,4 +1,8 @@
--- create tables
+-- CREATE TABLES
+-- Delete possible existing table in database.
+-- Create 4 different tables based on each .csv file.
+-- HINT: Before create directional table, you need to copy fgcat_id column from "foodgroups-en_ONPP.csv" file
+-- to "fg_directional_satements-en_ONPP.csv" file
 
 DROP TABLE IF EXISTS foodgroups;
 CREATE TABLE foodgroups(fgid varchar(2), foodgroup varchar(32), fgcat_id integer, fgcat varchar(64));
