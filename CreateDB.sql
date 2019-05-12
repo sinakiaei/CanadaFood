@@ -20,7 +20,7 @@ CREATE TABLE foods(fgid varchar(2), fgcat_id integer, srvg_sz varchar(64), food 
 
 -- FEED DATA INTO DATABASE 
 
--- HINT: Files path needs to change based on files location.
+-- HINT: Files path needs to set based on files location.
 
 COPY foodgroups FROM 'C:/Others/SinaKiaei/signal-master/data/foodgroups-en_ONPP.csv' DELIMITERS ',' CSV HEADER;
 COPY directional FROM 'C:/Others/SinaKiaei/signal-master/data/fg_directional_satements-en_ONPP.csv' DELIMITERS ',' CSV HEADER;
