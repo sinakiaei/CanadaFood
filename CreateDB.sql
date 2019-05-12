@@ -23,10 +23,9 @@ CREATE TABLE foods(fgid varchar(2), fgcat_id integer, srvg_sz varchar(64), food 
 -- HINT: Files path needs to change based on files location.
 
 COPY foodgroups FROM 'C:/Others/SinaKiaei/signal-master/data/foodgroups-en_ONPP.csv' DELIMITERS ',' CSV HEADER;
-
 COPY directional FROM 'C:/Others/SinaKiaei/signal-master/data/fg_directional_satements-en_ONPP.csv' DELIMITERS ',' CSV HEADER;
-
 COPY serving FROM 'C:/Others/SinaKiaei/signal-master/data/servings_per_day-en_ONPP.csv' DELIMITERS ',' CSV HEADER;
-
 COPY foods FROM 'C:/Others/SinaKiaei/signal-master/data/foods-en_ONPP_rev.csv' DELIMITERS ',' CSV HEADER ENCODING 'ISO-8859-1';
+
+-- Column ID in foods table deleted becuase there is no data in this column
 ALTER TABLE foods DROP COLUMN ID;
