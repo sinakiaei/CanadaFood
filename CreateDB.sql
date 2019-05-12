@@ -1,6 +1,6 @@
 -- CREATE TABLES
 
--- HINT: Before create directional table (Second table), you need to copy fgcat_id column from "foodgroups-en_ONPP.csv" file
+-- HINT: Before create directional table, you need to copy fgcat_id column from "foodgroups-en_ONPP.csv" file
 -- to "fg_directional_satements-en_ONPP.csv" file.
 
 -- First line: Delete possible existing table in database.
