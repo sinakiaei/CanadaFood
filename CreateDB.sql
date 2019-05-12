@@ -1,8 +1,10 @@
 -- CREATE TABLES
--- Delete possible existing table in database.
--- Create 4 different tables based on each .csv file.
--- HINT: Before create directional table, you need to copy fgcat_id column from "foodgroups-en_ONPP.csv" file
--- to "fg_directional_satements-en_ONPP.csv" file
+
+-- HINT: Before create directional table (Second table), you need to copy fgcat_id column from "foodgroups-en_ONPP.csv" file
+-- to "fg_directional_satements-en_ONPP.csv" file.
+
+-- First line: Delete possible existing table in database.
+-- Second line: Create table based on .csv file columns.
 
 DROP TABLE IF EXISTS foodgroups;
 CREATE TABLE foodgroups(fgid varchar(2), foodgroup varchar(32), fgcat_id integer, fgcat varchar(64));
@@ -16,7 +18,9 @@ CREATE TABLE serving(fgid varchar(2), gender varchar(6), ages varchar(16), servi
 DROP TABLE IF EXISTS foods;
 CREATE TABLE foods(fgid varchar(2), fgcat_id integer, srvg_sz varchar(64), food varchar(256), ID varchar(2));
 
--- feed data into database
+-- FEED DATA INTO DATABASE 
+
+-- HINT: Files path needs to change based on files location.
 
 COPY foodgroups FROM 'C:/Others/SinaKiaei/signal-master/data/foodgroups-en_ONPP.csv' DELIMITERS ',' CSV HEADER;
 
