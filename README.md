@@ -6,7 +6,7 @@ the most advanced Open Source database in the world.
 XAMPP is a completely free, easy to install Apache distribution containing MariaDB, PHP, and Perl.
 
 In order to run this code, it needs to import .csv files to the database. First, the "Food" database requires to create.
-"CreateDB.sql" file includes all commands need to run in order to create database tables. It needs to change current roots of .csv files in "CreateDB.sql". The 'fgcat_id' column created in 'fg_directional_satements-en_ONPP.csv'.
+"CreateDB.sql" file includes all commands need to run for creating database tables. It needs to change current roots of .csv files in "CreateDB.sql". The 'fgcat_id' column created in 'fg_directional_satements-en_ONPP.csv'.
 .
 The food.php and getfooddata.php should copy to the htdocs folder (C:\xampp\htdocs). 
 
